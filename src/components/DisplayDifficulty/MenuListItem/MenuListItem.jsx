@@ -20,8 +20,12 @@ export function MenuListItem({ onClicks, difficulty, isSelected }) {
         backgroundColor: getBackgroundColor(),
       }}
       className={s.container}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => {
+        setIsHovered(true);
+      }}
+      onMouseLeave={() => {
+        setIsHovered(false);
+      }}
     >
       Set to : {difficulty}
     </div>
